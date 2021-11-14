@@ -130,7 +130,7 @@ public class PythonService extends Service implements Runnable {
                 NotificationManager.IMPORTANCE_NONE);
             
             chan.setLightColor(Color.BLUE);
-            chan.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
+            chan.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC); //TODO: make this configurable
             NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             manager.createNotificationChannel(chan);
 
